@@ -1,0 +1,28 @@
+body {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    background-color: rgb(133, 130, 206);
+}
+
+span {
+    padding: 0 16px;
+    transition: opacity 0.3s;
+    font-family: monospace;
+    font-size: xx-large;
+    color: aliceblue;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+span:hover {
+    border-bottom: 1px solid rgb(250, 250, 250);
+    border-bottom-right-radius: 30%;
+    border-bottom-left-radius: 30%;
+}
+
+.sibling-fade:hover span:not(:hover) {
+    opacity: 0.2;
+}
